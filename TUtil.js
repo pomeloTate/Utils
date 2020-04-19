@@ -183,7 +183,6 @@ var TUtil = (function () {
         _formatTime: _formatTime,     // 将秒转换成对应格式的时间
         _setTopFixPos: _setTopFixPos, // 设置顶部的位置固定
         _setBottomFixPos: _setBottomFixPos,  // 设置底部的位置固定
-        _countTime: _countTime,
-	_typeof // 判断数据类型 
+        _typeof // 判断数据类型 
 	};
 })();
