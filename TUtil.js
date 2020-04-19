@@ -173,7 +173,9 @@ var TUtil = (function () {
         }, 1000);
         
     }
-
+	function _checkType (val) {
+		return Object.prototype.toString.call(val).match(/(?<=\s)(\w+)(?=])/g)[0]
+	}
 
 	return {
         EventClass: EventClass,   // 带有数据通信的自定义事件类
@@ -181,6 +183,7 @@ var TUtil = (function () {
         _formatTime: _formatTime,     // 将秒转换成对应格式的时间
         _setTopFixPos: _setTopFixPos, // 设置顶部的位置固定
         _setBottomFixPos: _setBottomFixPos,  // 设置底部的位置固定
-        _countTime: _countTime
+        _countTime: _countTime,
+	_checkType // 判断数据类型 
 	};
 })();
