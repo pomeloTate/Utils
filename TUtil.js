@@ -173,7 +173,7 @@ var TUtil = (function () {
         }, 1000);
         
     }
-	function _checkType (val) {
+	function _typeof (val) {
 		return Object.prototype.toString.call(val).match(/(?<=\s)(\w+)(?=])/g)[0]
 	}
 
@@ -184,6 +184,6 @@ var TUtil = (function () {
         _setTopFixPos: _setTopFixPos, // 设置顶部的位置固定
         _setBottomFixPos: _setBottomFixPos,  // 设置底部的位置固定
         _countTime: _countTime,
-	_checkType // 判断数据类型 
+	_typeof // 判断数据类型 
 	};
 })();
